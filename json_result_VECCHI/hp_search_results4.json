@@ -1,0 +1,54 @@
+{
+    "best_miou": 0.17016570098591016,
+    "best_config": {
+        "lr": 0.001,
+        "batch_size": 16,
+        "optimizer": "adam",
+        "resize": 256,
+        "augmentations": [
+            "HorizontalFlip",
+            "VerticalFlip",
+            "RandomRotate90"
+        ],
+        "num_workers": 0
+    },
+    "best_history": {
+        "train_loss": [
+            1.0248423569342668
+        ],
+        "val_loss": [
+            1.9435831606388092
+        ],
+        "val_miou": [
+            0.17016570098591016
+        ]
+    },
+    "all_trials": [
+        {
+            "config": {
+                "lr": 0.001,
+                "batch_size": 16,
+                "optimizer": "adam",
+                "resize": 256,
+                "augmentations": [
+                    "HorizontalFlip",
+                    "VerticalFlip",
+                    "RandomRotate90"
+                ],
+                "num_workers": 0
+            },
+            "history": {
+                "train_loss": [
+                    1.0248423569342668
+                ],
+                "val_loss": [
+                    1.9435831606388092
+                ],
+                "val_miou": [
+                    0.17016570098591016
+                ]
+            },
+            "final_miou": 0.17016570098591016
+        }
+    ]
+}
