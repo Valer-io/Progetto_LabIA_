@@ -1,5 +1,5 @@
-
-Per adesso ho deciso di levare la classe Wetlands.
-Nella classe dataset ho calcolato ndvi e ndwi e inizialmente li avevo concatenati al canale RGB dell'immagine, ma veniva un canale di dimensione 5 e avevo problemi con DeepLabV3 perché
-accetta canali RGB di dimensione 3, e quindi non sapevo come usare i dati di ndvi e ndwi
-Per adesso ho problemi di overfitting
+Ho fatto vari train: sono partito da un train normale senza bilanciamento della loss con i class weights, poi li ho aggiunti ed ho notato che la MiOu si è alzata.
+Ho provato aggiugendo un'altra augmentation (A.GridDistortion(p=0.2)) ed ho provato a tenere la size attuale delle immagini (1024) e anche con 512.
+Volevo usare altre backbone come ResNet18 o EfficientNet, ma l'ho trovate pesanti e mi ci sarebbe voluto troppo tempo.
+L'ultima prova che ho fatto è stata un lo scheduler con parametri step_size=5, gamma=0.5.
+In generale ho ottenuto una MiOu finale di 0.4.
