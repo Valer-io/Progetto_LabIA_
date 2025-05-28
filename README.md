@@ -3,3 +3,4 @@ Ho provato aggiugendo un'altra augmentation (A.GridDistortion(p=0.2)) ed ho prov
 Volevo usare altre backbone come ResNet50 (Troppo pesante), Resnet18 o EfficientNet, ma l'ho trovate pesanti e mi ci sarebbe voluto troppo tempo.
 L'ultima prova che ho fatto è stata un lo scheduler con parametri step_size=5, gamma=0.5.
 In generale ho ottenuto una MiOu finale di 0.4.
+Dentro la cartella "prove" ci stanno le 5 prove in ordine, del notebook
