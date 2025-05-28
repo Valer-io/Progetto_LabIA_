@@ -1,0 +1,2 @@
+Ho iniziato con LR = 0.001 (decay: 0)
+e scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.5)
