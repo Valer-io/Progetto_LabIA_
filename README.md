@@ -4,3 +4,4 @@ Volevo usare altre backbone come ResNet50 (Troppo pesante), Resnet18 o Efficient
 L'ultima prova che ho fatto è stata un lo scheduler con parametri step_size=5, gamma=0.5.
 In generale ho ottenuto una MiOu finale di 0.4.
 Dentro la cartella "prove" ci stanno le 5 prove in ordine, del notebook
+Nel progetto vecchio avevo messo "max_pixel_value=1.0" perché così ottenevo dei valori di mean e std migliore, adesso l'ho levato ed ho usato "image = self.normalize(image)" direttamente nel __getitem__
